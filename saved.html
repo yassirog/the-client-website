@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Navbar</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="styles/saved.css">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:500&display=swap" rel="stylesheet">
+    </head>
+    <body>
+
+      <!-- NAVBAR -->
+        <header>
+            <a class="logo"><img width="101" height="36" alt="Funda" src="https://assets.fstatic.nl/master-68290/assets/components/logo/fundawonen-logo.svg">
+            </a>
+            <nav>
+                <ul class="nav__links">
+                    <li><a href="index.html">Login</a></li>  
+                    <li><a href="https://www.funda.nl/en/">Funda Site</a></li>  
+
+                </ul>
+            </nav>
+            <p class="menu cta">Menu</p>
+        </header>
+        <div class="overlay">
+            <a class="close">&times;</a>
+            <div class="overlay__content">
+                <a href="index.html">Login</a>
+                <a href="https://www.funda.nl/en/">Funda Site</a>
+            </div>
+        </div>
+
+        <!-- ALLES ONDER NAVBAR -->
+
+        <body>
+          
+            <div class="wrapper">
+              <div class="wrappersearchbar">
+                <div id="search-container">
+                    <input
+                    type="search"
+                    id="search-input"
+                        placeholder="Zoek jouw toekomstige huis hier! (Stad), (Soort huis)"
+                />
+                <button id="search">Zoeken</button>
+              </div>
+            </div>
+            <div class="wrappersearchbar">
+              <div id="buttons">
+                <button class="button-value" onclick="filterProduct('Alles')">Alles</button>
+                <button class="button-value" onclick="filterProduct('Appartement')">
+                  Appartement
+                </button>
+                <button class="button-value" onclick="filterProduct('Villa')">
+                  Villa
+                </button>
+                <button class="button-value" onclick="filterProduct('Woonhuis')">
+                  Woonhuis
+                </button>
+                <button class="button-value" onclick="filterProduct('Watch')">
+                  Watch
+                </button>
+              </div>
+            </div>
+          </div>
+              <div id="products"></div>
+            
+
+        <script type="text/javascript" src="scripts/saved.js"></script>
+    </body>
+</html>
