@@ -27,6 +27,7 @@
   
   .logo {
     cursor: pointer;
+    color: rgb(0, 97, 150);
   }
   
   .nav__links a,
@@ -175,7 +176,7 @@
   body {
     background-color: #f5f8ff;
   }
-  
+
  .wrappersearchbar {
   display: flex;
   flex-direction: row;
@@ -238,7 +239,7 @@
     display: grid;
     grid-template-columns: auto auto auto auto;
     grid-column-gap: 1em;
-    padding: 2em 0;
+    /* padding: 2em 0; */
     margin-left: 1em;
     margin-right: 1em;
   }

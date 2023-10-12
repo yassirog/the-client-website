@@ -18,87 +18,115 @@ menuClose.addEventListener("click", () => {
 let products = {
   data: [
     {
-      productName: "Woonhuis",
+      productName: "Woonhuis de pijp",
       category: "Woonhuis",
-      price: "30",
+      price: "300.000",
       image: "assets/seng.jpeg",
+      m4: "30",
+      slaapkamers: "2",
     },
     {
       productName: "Villa woerden",
       category: "Villa",
-      price: "49",
+      price: "490.000",
       image: "assets/villa.jpeg",
+      m4: "80",
+      slaapkamers: "6",
     },
     {
       productName: "Appartement Amsterdam",
       category: "Appartement",
-      price: "99",
+      price: "990.000",
       image: "assets/appa1.jpeg",
+      m4: "54",
+      slaapkamers: "3",
     },
     {
       productName: "Villa Blaricum",
       category: "Villa",
-      price: "29",
+      price: "2.900.000",
       image: "assets/villa1.jpeg",
+      m4: "90",
+      slaapkamers: "8",
     },
     {
       productName: "Appartement Heemskerk",
       category: "Appartement",
-      price: "129",
+      price: "129.000",
       image: "assets/appa2.jpeg",
+      m4: "63",
+      slaapkamers: "3",
     },
     {
       productName: "Appartement Holendrecht",
       category: "Appartement",
-      price: "89",
+      price: "890.000",
       image: "assets/appa3.jpeg",
+      m4: "72",
+      slaapkamers: "3",
     },
     {
-      productName: "",
+      productName: "APPARTEMENT PURRIE",
       category: "Appartement",
-      price: "189",
-      image: "",
+      price: "1.000.000",
+      image: "assets/appa5.jpeg",
+      m4: "62",
+      slaapkamers: "4",
     },
     {
-      productName: "",
+      productName: "woonhuis purra",
       category: "Woonhuis",
-      price: "49",
-      image: "",
+      price: "490.000",
+      image: "assets/woonhuisje.jpeg",
+      m4: "53",
+      slaapkamers: "3",
     },
   {
-    productName: "",
+    productName: "woonhuis zwolle",
     category: "Woonhuis",
-    price: "129",
-    image: "",
+    price: "129.000",
+    image: "assets/woonhuisje2.jpeg",
+    m4: "93",
+    slaapkamers: "3",
   },
   {
-    productName: "",
+    productName: "Woonhuis breukelen",
     category: "Woonhuis",
-    price: "89",
-    image: "",
+    price: "890.000",
+    image: "assets/woonhuisje3.jpeg",
+    m4: "63",
+    slaapkamers: "3",
   },
   {
-    productName: "",
+    productName: "villa kruiskade",
     category: "Villa",
-    price: "129",
-    image: "",
+    price: "1.290.000",
+    image: "assets/villa4.jpeg",
+    m4: "90",
+    slaapkamers: "7",
   },
   {
-    productName: "",
+    productName: "APPARTEMENT AMSTERDAM-WEST",
     category: "Appartement",
-    price: "89",
-    image: "",
+    price: "890.000",
+    image: "assets/appa4.jpeg",
+    m4: "62",
+    slaapkamers: "3",
   }, {
     productName: "Villa Maastricht",
     category: "Villa",
-    price: "129",
+    price: "3.210.300",
     image: "assets/villa2.jpeg",
+    m4: "103",
+    slaapkamers: "7",
   },
   {
     productName: "Villa Purmerend",
     category: "Villa",
-    price: "89",
+    price: "891.230",
     image: "assets/villa3.jpeg",
+    m4: "101",
+    slaapkamers: "6",
   },
   ],
 };
@@ -119,14 +147,28 @@ for (let i of products.data) {
   let container = document.createElement("div");
   container.classList.add("container");
   //product name
-  let name = document.createElement("h3");
+  let name = document.createElement("p");
   name.classList.add("product-name");
   name.innerText = i.productName.toUpperCase();
+  name.style["color"] = "rgb(0, 97, 150)";
+  name.style["font-weight"] = "bold";
   container.appendChild(name);
   //price
-  let price = document.createElement("h4");
-  price.innerText = "$" + i.price;
+  let price = document.createElement("i");
+  price.innerText = "€" + i.price;
   container.appendChild(price);
+  card.appendChild(container);
+  document.getElementById("products").appendChild(card);
+  //m2 
+  let m4 = document.createElement("p");
+  m4.innerText = i.m4 + "m²";
+  container.appendChild(m4);
+  card.appendChild(container);
+  document.getElementById("products").appendChild(card);
+  //sleeprooms
+  let slaapkamers = document.createElement("p");
+  slaapkamers.innerText = i.slaapkamers + " slaapkamers";
+  container.appendChild(slaapkamers);
   card.appendChild(container);
   document.getElementById("products").appendChild(card);
 }
