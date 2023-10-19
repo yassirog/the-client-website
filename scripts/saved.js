@@ -66,7 +66,7 @@ let products = {
       slaapkamers: "3",
     },
     {
-      productName: "APPARTEMENT PURRIE",
+      productName: "APPARTEMENT purmerend",
       category: "Appartement",
       price: "1.000.000",
       image: "assets/appa5.jpeg",
@@ -74,7 +74,7 @@ let products = {
       slaapkamers: "4",
     },
     {
-      productName: "woonhuis purra",
+      productName: "woonhuis purmerend",
       category: "Woonhuis",
       price: "490.000",
       image: "assets/woonhuisje.jpeg",
@@ -128,6 +128,7 @@ let products = {
     m4: "101",
     slaapkamers: "6",
   },
+  
   ],
 };
 for (let i of products.data) {

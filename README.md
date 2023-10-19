@@ -1,7 +1,7 @@
 # Client Website
 
 
-Dit project omvat een Squad page dat gemaakt is in `VisualCode`.
+Dit project omvat een remake van de Saved houses page voor Funda dat gemaakt is in `VisualCode`.
 
 ## 📖 Inhoudsopgave
 
