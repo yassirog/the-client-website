@@ -9,7 +9,9 @@ Dit project omvat een remake van de Saved houses page voor Funda dat gemaakt is 
   * [Kenmerken](#kenmerken)
   * [Installatie](#installatie)
   * [Gebruik](#gebruik)
-  * [Licentie](#licentie)
+  * [Licentie](#licentie)!
+  * [isolated_tablet_laptop_and_smartphone_composition](https://github.com/yassirog/the-client-website/assets/144006281/114b0fe8-1b68-428d-8d61-8be58a76a052)
+
 
 ## 💎 Kenmerken
 
